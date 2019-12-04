@@ -1,0 +1,1 @@
+{"version":3,"file":"yfui.min.css","sources":["webpack://yfui/./src/components/index.scss"],"sourcesContent":[".yf-button {\n  border: none;\n  padding: 5px 15px;\n  background: #41B883;\n  color: #fff; }\n"],"mappings":";AAAA;AACA;AACA;AACA;AACA;;","sourceRoot":""}

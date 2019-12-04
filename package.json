@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "package:dev": "webpack --config build/package.dev.config.js",
+    "package:prod": "webpack --config build/package.prod.config.js"
   },
   "dependencies": {
     "core-js": "^3.4.3",
@@ -15,13 +17,19 @@
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
-    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.12.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "prettier": "^1.19.1",
     "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.10"
   },
   "eslintConfig": {
     "root": true,
@@ -30,7 +38,7 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "@vue/standard"
+      "@vue/prettier"
     ],
     "rules": {},
     "parserOptions": {
@@ -40,5 +48,6 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "main": "package/lyui.min.js"
 }
