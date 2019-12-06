@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
-    <yf-button>
+    <yf-button class="btn" @click="click1" :loading="loading">
       <div>456</div>
     </yf-button>
-    <yf-button>123</yf-button>
+    <yf-icon name="load" size="20px"></yf-icon>
   </div>
 </template>
 
@@ -12,6 +12,20 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  data() {
+    return {
+      loading: false
+    };
+  },
+  methods: {
+    click1() {
+      console.log("1");
+      this.loading = true;
+      setTimeout(() => {
+        this.loading = false;
+      }, 3000);
+    }
   }
 };
 </script>

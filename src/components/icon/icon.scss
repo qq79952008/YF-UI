@@ -1,0 +1,16 @@
+.is-disabled {
+	cursor: not-allowed;
+	fill: #bbbbbb;
+}
+.icon-loading {
+	animation: rotating 1s infinite linear;
+}
+
+@keyframes rotating {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}

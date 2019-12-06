@@ -1,7 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
-import yfui from "../package/prod/yfui.min.js";
-import "../package/prod/yfui.min.css";
+// import yfui from "./components/index";
+import yfui from "../package/dev/yfui";
+// import "./components/index.scss";
+import "../package/dev/yfui.min.css";
 Vue.config.productionTip = false;
 Vue.use(yfui);
 new Vue({

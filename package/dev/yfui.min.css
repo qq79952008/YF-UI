@@ -1,9 +1,40 @@
 /* eslint-disable */
 .yf-button {
-  border: none;
-  padding: 5px 15px;
-  background: #41B883;
-  color: #fff; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #409eff;
+  border: 1px solid #dcdfe6;
+  color: #fff;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px; }
+
+.is-disabled {
+  cursor: not-allowed;
+  fill: #bbbbbb; }
+
+.icon-loading {
+  animation: rotating 1s infinite linear; }
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(360deg); } }
 
 
 /*# sourceMappingURL=yfui.min.css.map*/
