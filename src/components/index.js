@@ -1,11 +1,14 @@
 import Button from "./button";
 import Icon from "./icon";
+import Lazy from "./lazy";
+import longList from "./longList/index";
 import "./index.scss";
 const components = {
   Button,
-  Icon
+  Icon,
+  Lazy,
+  longList
 };
-
 const install = function(Vue) {
   if (install.installed) return;
   Object.keys(components).forEach(key => {
